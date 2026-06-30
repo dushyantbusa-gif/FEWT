@@ -1,0 +1,33 @@
+<!-- Write a JavaScript program to print the GCD (Greatest Common Divisor) of two
+numbers -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>3</title>
+</head>
+<body>
+
+</body>
+<script>
+	var s = parseInt(prompt("Entre the number n"));
+	var e = parseInt(prompt("Entre the number n"));
+    var num=0;
+    if(s<e){
+        var t=s;
+            s=e;
+            e=s;
+    }
+	for(var i=1;i<=e;i++)
+	{
+		if(s%i==0 && e%i==0){
+			num=i;
+		}
+		
+	}
+    console.log(num);
+
+</script>
+</html>
