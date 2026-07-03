@@ -9,17 +9,12 @@
 
 </body>
 <script>
-	var a = parseInt(prompt("Entre the number"));    var num=0;
-    var b = parseInt(a/10);
-	var m = parseInt(a%10);
-	var ans=1;	
-		a=Math.pow(b,m);
-
-        for(i=1;i<=m;i++){
-            ans=b*ans;
-        }
-    console.log("Function=",ans);
-    console.log("pow=", a);
-
+	var a = parseInt(prompt("Entre the number"));
+    if(a>999){
+    	console.log("Out of Renge ");
+    }
+    else if(a!=NaN){
+    	console.log("Not A Number");
+    }
 </script>
 </html>
