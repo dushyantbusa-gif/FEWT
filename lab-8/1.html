@@ -1,0 +1,34 @@
+<!-- Write a JavaScript program to check whether a given number is an Armstrong
+number or not using a popup box.  -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Armstrong</title>
+</head>
+<body>
+
+</body>
+
+<script>
+	var num = parseInt(prompt("Enter a number:"));
+	var original = num;
+	var reversed = 0;
+
+	while (num > 0) {
+    var	l = num%10;
+    reversed = (reversed * 10) + l;
+    num = Math.floor(num / 10);       
+	}
+
+	if (original == reversed) {
+    alert("It is a palindrome!");
+	} else {
+    alert("Not a palindrome.");
+}	
+
+</script>
+</html>
