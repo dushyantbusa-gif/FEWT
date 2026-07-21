@@ -1,0 +1,30 @@
+<!-- 1. Create a webpage that changes text content when a button is clicked. (A)  -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>lab-11(1)</title>
+</head>
+<body>
+		<h1 id="h1">:)</h1>
+		<button onclick="content()">click me</button>
+</body>
+<script>
+	var num = 0
+	function content(){
+			var h1=document.getElementById("h1");
+			if(num%2==0){
+				h1.innerHTML=":(";
+				num++;
+			}
+			else{
+				h1.innerHTML=":)";
+				num++;
+			}
+		
+	}
+
+</script>
+
+</html>
