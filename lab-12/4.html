@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>3</title>
+</head>
+<body id="body">
+<header onmouseout="out()"onmouseover="over()">
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul> 
+</header>
+
+<button onclick="ftime()">Find Time</button>
+<h1 id="h"></h1>
+<button onclick="red()">RED</button>
+<button onclick="green()">GREEN</button>
+<script>
+
+function out(){
+	var body = document.getElementById('body');
+		body.style.backgroundColor='yellow';
+		body.style.color='black';
+}
+function over(){
+	var body = document.getElementById('body');
+		body.style.backgroundColor='black';
+		body.style.color='yellow';
+}
+function ftime(){
+	const now = new Date();
+	console.log(now);
+	document.getElementById('h').innerHTML=now;
+
+}
+function red(){
+	document.getElementById('body').style.backgroundColor='red';
+}
+function green(){
+	document.getElementById('body').style.backgroundColor='green';
+}
+</script>
+</html>
