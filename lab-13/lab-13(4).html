@@ -1,0 +1,35 @@
+<!-- 4. Write a program to take a character input from the user and display whether the 
+key pressed is a number, an alphabet, or a symbol. (C)  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>lab-13-1</title>
+</head>
+<body>
+	<input type="text" name="" onkeydown="s(event)">
+	<h1 id="h1"></h1>
+</body>
+<script>
+	function s(event){
+		let h1=document.getElementById('h1');
+		let ch=event.key;
+
+		if((ch>='a' && ch<='z') ||(ch>='A' && ch<='Z') ){
+			h1.innerHTML="char";
+		}
+		else if(ch>='0' && ch<='9'){
+			h1.innerHTML="number";
+		}
+		else if(ch==" "){
+			h1.innerHTML="space";
+		}
+		else{
+			h1.innerHTML="symbol";
+		}
+	}
+
+</script>
+</html>
