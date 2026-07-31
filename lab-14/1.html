@@ -1,0 +1,32 @@
+<!-- 1. Write a program to demonstrate the concept of classes in JavaScript. (A)  -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>demonstrate the concept of classes</title>
+</head>
+<body>
+
+</body>
+<script> 
+	class student
+	{
+		constructor(name,rollno)
+		{
+			this.name=name;
+			this.rollno=rollno;
+		}
+
+		display() {
+			return this.name +" "+this.rollno;
+		}
+	}
+		var a= new student("rohit",45);
+		var b=a.display();
+		console.log(b);
+
+</script>
+</html>
