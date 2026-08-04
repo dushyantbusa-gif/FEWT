@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+</body>
+<script>
+	let a=parseInt(prompt("Entre the number"));
+	let i=0,f=0,rev=0;
+	
+
+	
+	var palindrome=(a)=>{
+		let b=a;
+		while(a!=0){
+			ab=a%10;
+			rev=rev*10+ab;
+			a=Math.floor(a/10);
+		}
+	if(b==rev){
+		console.log("Number is palindrome");
+	}
+	else{
+		console.log("Not palindrome");
+	}
+	};
+	console.log(palindrome(a));
+
+</script>
+</html>

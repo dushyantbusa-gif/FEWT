@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+</body>
+<script>
+	let a=parseInt(prompt("Entre the number"));
+	let i=0,f=0;
+
+	
+	var prime=(a)=>{
+
+		for(i=2;i<a;i++){
+			if(a%i==0){
+				return false;
+			}
+		}
+		return true;
+		
+	};
+
+
+
+	if(prime(a)){
+		console.log("Number is Prime");
+	}
+	else{
+		console.log("Not Prime");
+	}
+</script>
+</html>
