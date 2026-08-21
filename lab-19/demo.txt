@@ -1,0 +1,8 @@
+Implementation of Destructuring and Working with import, export and spread operators.
+1. Write a program to demonstrate the use of object destructuring in JavaScript. (A)
+2. Write a program to demonstrate the use of array destructuring in JavaScript. (A)
+3. Write a program to demonstrate the use of the export module in JavaScript. (A)
+4. Write a program to demonstrate the use of the import module in JavaScript. (A)
+5. Write a program to demonstrate the spread operator in JavaScript. (B)
+6. Write a program to combine two numerical arrays using the spread operator in
+JavaScript. (C)
